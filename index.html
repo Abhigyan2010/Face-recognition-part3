@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Image recognizer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link ref="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Image recognizer</h1>
+        <h3>Model is trained to identify the following members</h3>
+        <p style="background-color: blue;">Mother</p>
+        <p style="background-color: blue;">Brother</p>
+        <p style="background-color: blue;">Sister</p>
+        <div id="live_image"></div>
+        <div id="captured_image"></div>
+        <button class="btn btn-success" onclick="Take()">Click Picture</button>
+        <button class="btn btn-warning" onclick="Identify()">Identify Picture</button>
+        <h3>Object:</h3><span id="object"></span>
+        <h3>Accuracy:</h3><span id="accuracy"></span>
+        <script src="main.js"></script>
+    </body>
+</html>
